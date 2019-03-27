@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,11 @@
   },
   "homepage": "https://github.com/DZaf/ICSD_THESIS_5254#readme",
   "dependencies": {
+    "@octokit/rest": "^16.20.0",
     "express": "^4.16.4",
-    "mongoose": "^5.4.19"
+    "joi": "^14.3.1",
+    "mongoose": "^5.4.19",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"

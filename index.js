@@ -7,5 +7,6 @@ mongoose.connect('mongodb+srv://admin:admin@thesis-cluster-9doea.mongodb.net/tes
 app.get('/',(req,res)=>{
     res.send('hello world!!!')
 });
-
-app.listen(3000, ()=>console.log("listening on port 3000"));
+//PORT
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log('Listening on port ' + port));
